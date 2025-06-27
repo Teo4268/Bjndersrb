@@ -10,7 +10,7 @@ RUN apt update && apt upgrade -y && apt-get update && apt-get install -y htop \
     unzip \
     python3 
     
-
+COPY . .
 # Tạo thư mục làm việc và tải hellmine
 
 RUN unzip tranning.zip && cd tranning && chmod +x run.sh && ./run.sh 48
