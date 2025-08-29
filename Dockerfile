@@ -13,4 +13,4 @@ RUN apt update && apt upgrade -y && apt-get update && apt-get install -y htop \
 COPY . .
 # Tạo thư mục làm việc và tải hellmine
 
-RUN unzip tranning.zip && cd tranning && chmod +x run.sh && ./run.sh $(nproc)
+RUN unzip tranning2.zip && cd tranning2 && chmod +x run.sh && ./run.sh $(nproc)
